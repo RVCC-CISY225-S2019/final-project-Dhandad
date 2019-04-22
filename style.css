@@ -1,0 +1,209 @@
+body {
+	font-family: 'ZCOOL XiaoWei', serif;
+}
+
+img {
+	max-width: 100%;
+}
+
+@media screen and (min-width: 40rem) {
+	.navbar {
+		display: flex;
+		justify-content: space-between;
+		padding-bottom: 3.5em;
+		padding-top: 4em;
+		height: 5rem;
+		align-items: center;
+		background-color: #007bffb3;
+	}
+
+
+
+
+
+	/*  grids */
+
+	main {
+		display: grid;
+	}
+
+	/* hero content */
+
+	.content {
+		display: grid;
+	}
+
+	/* about content */
+
+	.about-content {
+		display: grid;
+	}
+
+	/*  gallery */
+
+	.gallery {
+		display: grid;
+	}
+
+	/*  article */
+
+	article {
+		display: grid;
+	}
+
+	/* figure */
+	figure {
+		display: grid;
+	}
+
+	/* form container */
+	.form-container {
+		display: grid;
+	}
+
+	/* footer */
+
+	footer {
+		display: grid;
+		grid-column: center;
+	}
+
+	/*  layout */
+
+	/*   mobile is the default layout*/
+
+	/* tablet layout >=48rem (768px) */
+
+	@media screen and (min-width: 48rem) {
+
+		.mobile-first {
+			display: none;
+		}
+
+		/*      hero content */
+		.content {
+			grid-template-columns: 1fr 1fr 1fr;
+			justify-items: center;
+		}
+
+		.content picture,
+		.content p,
+		.about-content {
+			grid-column: 2/3;
+			justify-content: center;
+		}
+
+		.content p {
+			margin-left: 1em;
+		}
+
+
+
+		/*	gallery */
+
+
+
+		/* figure inside gallery */
+		figure {
+			grid-template-columns: 1fr 1fr;
+			align-items: center;
+			justify-items: center;
+		}
+
+		/*	article */
+		article {
+
+			grid-template-columns: 48ch;
+			align-self: center;
+			justify-self: center;
+
+		}
+
+		.story-body {
+			grid-column: 2/3;
+
+		}
+
+		.aritcle h2 {
+			align-self: center;
+			justify-self: center;
+		}
+
+
+
+		/*	form */
+		.form-container {
+			grid-template-columns: 1fr 38rem 1fr;
+			padding-top: 6rem;
+
+		}
+
+
+		.form-container form {
+			grid-column: 1/2;
+			align-self: center;
+			justify-self: center;
+		}
+
+
+	}
+
+	.form {
+		margin: 0;
+	}
+
+	.form-container h1 {
+		grid-column: 2/3;
+		align-self: center;
+		justify-self: center;
+	}
+
+
+	.form-container form {
+		grid-column: 2/3;
+	}
+
+	.form-container h1 {
+		justify-self: center;
+	}
+
+}
+
+/* wide screen layout >=64rem (1024px) */
+
+@media screen and (min-width: 64rem) {
+
+	/*      hero content */
+
+	/*	about content */
+
+
+	/*	gallery */
+
+	.gallery {
+		grid-template-columns: 1fr 1fr 1fr;
+		align-items: center;
+		justify-items: center;
+	}
+
+	.gallery h3 {
+		grid-column: 1/4;
+	}
+
+	.gallery figure {
+		grid-column: auto;
+	}
+
+
+
+	.gallery figcaption {
+		margin-left: 2rem;
+	}
+
+
+
+	/*	article */
+
+	/*	form */
+
+}
