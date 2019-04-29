@@ -282,7 +282,7 @@ body {
     transform: translateX(-50%) rotate(45deg);
 }
 
-P:first-letter{
+.dropcap:first-letter{
     float: lfet;
     font-size: 45px;
     line-height: 1;
@@ -293,6 +293,7 @@ P:first-letter{
     text-shadow:  #888887 .05em .05em;
 
 }
+
 
 
 
