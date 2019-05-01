@@ -85,6 +85,10 @@ img {
     /* footer */
 
     footer {
+        text-align: center;
+        background-color: #007bffb3;
+        color: white;
+        padding:50px;
         display: grid;
         grid-column: center;
     }
@@ -285,16 +289,30 @@ body {
 .dropcap:first-letter{
     float: lfet;
     font-size: 45px;
-    line-height: 1;
+    line-height: 1px;
     font-weight: bold;
     margin-right: 9px;
     color: #007bffb3;
     font-family: "Times New Roman", Time, serif;
     text-shadow:  #888887 .05em .05em;
+    
 
 }
 
+.story{
+    line-height: 2;
+}
 
+
+.to-top{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background: #000;
+    color: #fff;
+    padding: 9px 12px;
+    border-radius: 50%;
+}
 
 
 
